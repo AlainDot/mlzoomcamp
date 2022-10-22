@@ -1,0 +1,18 @@
+# Same as `bentoml serve <service-name>`
+service: "hw7_q5__service.py:svc"  
+
+labels:
+    owner: alain
+    stage: dev
+
+# all files to be loaded
+include:
+- "hw7_q5__service.py"  
+
+# all package needed
+python:
+    packages:  
+    - xgboost
+    - pandas
+    - sklearn
+    - pydantic
